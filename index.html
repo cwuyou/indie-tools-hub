@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="theme-default">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndieTools Hub - 独立开发者工具导航</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-tools"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>IndieTools Hub</h1>
+                    <p class="subtitle">独立开发者工具导航</p>
+                </div>
+            </div>
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="搜索工具、网站或分类..." autocomplete="off">
+                    <button type="button" id="search-clear" class="search-clear" style="display: none;">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+                <div class="search-results" style="display: none;">
+                    <div class="results-stats">
+                        找到 <span id="results-count">0</span> 个结果
+                    </div>
+                    <div id="results-container"></div>
+                </div>
+            </div>
+            <ul class="nav-list">
+                <li>
+                    <a href="#section1" class="has-submenu">
+                        <i class="fas fa-robot"></i> AI 对话助手
+                        <span class="arrow">▼</span>
+                    </a>
+                    <ul class="submenu">
+                        <li><a href="#section1">所有助手</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#section2" class="has-submenu">
+                        <i class="fas fa-search"></i> 需求与调研
+                        <span class="arrow">▼</span>
+                    </a>
+                    <ul class="submenu">
+                        <li><a href="#section2-1">AI导航站的需求列表</a></li>
+                        <li><a href="#section2-2">关键词难度</a></li>
+                        <li><a href="#section2-3">谷歌下拉词</a></li>
+                        <li><a href="#section2-4">toolify榜单</a></li>
+                        <li><a href="#section2-5">GoogleTrends</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#section3" class="has-submenu">
+                        <i class="fas fa-tools"></i> 站点必备
+                        <span class="arrow">▼</span>
+                    </a>
+                    <ul class="submenu">
+                        <li><a href="#section3-1">域名查询</a></li>
+                        <li><a href="#section3-2">域名注册</a></li>
+                        <li><a href="#section3-3">代码&网站托管</a></li>
+                        <li><a href="#section3-4">数据后台</a></li>
+                        <li><a href="#section3-5">复刻网站</a></li>
+                        <li><a href="#section3-6">SEO优化建议</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#section4" class="has-submenu">
+                        <i class="fas fa-chart-line"></i> 竞品调研
+                        <span class="arrow">▼</span>
+                    </a>
+                    <ul class="submenu">
+                        <li><a href="#section4-1">查看流量和网页关键词</a></li>
+                        <li><a href="#section4-2">查看外链</a></li>
+                        <li><a href="#section4-3">查看网站关键词</a></li>
+                        <li><a href="#section4-4">查看关键词相关词</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#section5" class="has-submenu">
+                        <i class="fas fa-cogs"></i> 功能实现
+                        <span class="arrow">▼</span>
+                    </a>
+                    <ul class="submenu">
+                        <li><a href="#section5-1">支付工具</a></li>
+                        <li><a href="#section5-2">数据存储</a></li>
+                        <li><a href="#section5-3">模型API</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#section6" class="has-submenu">
+                        <i class="fas fa-gamepad"></i> Iframe游戏
+                        <span class="arrow">▼</span>
+                    </a>
+                    <ul class="submenu">
+                        <li><a href="#section6-1">crazygames</a></li>
+                        <li><a href="#section6-2">gamedistribution</a></li>
+                        <li><a href="#section6-3">scratch</a></li>
+                        <li><a href="#section6-4">miniplay</a></li>
+                        <li><a href="#section6-5">freezenova</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#section7" class="has-submenu">
+                        <i class="fas fa-newspaper"></i> 资讯
+                        <span class="arrow">▼</span>
+                    </a>
+                    <ul class="submenu">
+                        <li><a href="#section7-1">谷歌搜索中心</a></li>
+                        <li><a href="#section7-2">Reddit子社区</a></li>
+                        <li><a href="#section7-3">Top Trending Websites</a></li>
+                        <li><a href="#section7-4">AI VIDEO SAAS TOOL</a></li>
+                        <li><a href="#section7-5">Starter Story Premium</a></li>
+                        <li><a href="#section7-6">500/month Projects</a></li>
+                        <li><a href="#section7-7">Ask HN Projects</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <main class="content">
+            <section id="section1" class="section">
+                <h2>AI 对话助手</h2>
+                <div class="subcategory">
+                    <h3>所有助手</h3>
+                    <div class="card-grid">
+                        <a href="https://claude.ai/" class="card" target="_blank">
+                            <h3>Claude</h3>
+                            <p>https://claude.ai/</p>
+                        </a>
+                        <a href="https://chatgpt.com/" class="card" target="_blank">
+                            <h3>ChatGPT</h3>
+                            <p>https://chatgpt.com/</p>
+                        </a>
+                        <a href="https://gemini.google.com/app" class="card" target="_blank">
+                            <h3>Gemini</h3>
+                            <p>https://gemini.google.com/app</p>
+                        </a>
+                        <a href="https://chat.deepseek.com/" class="card" target="_blank">
+                            <h3>Deepseek</h3>
+                            <p>https://chat.deepseek.com/</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section2" class="section">
+                <h2>需求与调研</h2>
+                <div id="section2-1" class="subcategory">
+                    <h3>AI导航站的需求列表</h3>
+                    <div class="card-grid">
+                        <a href="https://theresanaiforthat.com/requests" class="card" target="_blank">
+                            <h3>AI导航站需求列表</h3>
+                            <p>https://theresanaiforthat.com/requests</p>
+                        </a>
+                    </div>
+                </div>
+                <div id="section2-2" class="subcategory">
+                    <h3>关键词难度</h3>
+                    <div class="card-grid">
+                        <a href="https://ahrefs.com/keyword-difficulty" class="card" target="_blank">
+                            <h3>Ahrefs关键词难度</h3>
+                            <p>https://ahrefs.com/keyword-difficulty</p>
+                        </a>
+                    </div>
+                </div>
+                <div id="section2-3" class="subcategory">
+                    <h3>谷歌下拉词</h3>
+                    <div class="card-grid">
+                        <a href="https://searchsuggest.tips/?keyword=" class="card" target="_blank">
+                            <h3>搜索建议工具</h3>
+                            <p>https://searchsuggest.tips/?keyword=</p>
+                        </a>
+                    </div>
+                </div>
+                <div id="section2-4" class="subcategory">
+                    <h3>toolify榜单</h3>
+                    <div class="card-grid">
+                        <a href="https://www.toolify.ai/Best-AI-Tools-revenue" class="card" target="_blank">
+                            <h3>Toolify AI工具榜单</h3>
+                            <p>https://www.toolify.ai/Best-AI-Tools-revenue</p>
+                        </a>
+                    </div>
+                </div>
+                <div id="section2-5" class="subcategory">
+                    <h3>GoogleTrends</h3>
+                    <div class="card-grid">
+                        <a href="https://trends.google.com/trends/explore?geo=US&hl=zh-CN" class="card" target="_blank">
+                            <h3>Google趋势</h3>
+                            <p>https://trends.google.com/trends/explore?geo=US&hl=zh-CN</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section3" class="section">
+                <h2>站点必备</h2>
+                <div id="section3-1" class="subcategory">
+                    <h3>域名查询</h3>
+                    <div class="card-grid">
+                        <a href="https://leandomainsearch.com/" class="card" target="_blank">
+                            <h3>Lean Domain Search</h3>
+                            <p>https://leandomainsearch.com/</p>
+                        </a>
+                        <a href="https://query.domains/" class="card" target="_blank">
+                            <h3>Query Domains</h3>
+                            <p>https://query.domains/</p>
+                        </a>
+                        <a href="https://instantdomainsearch.com/?q=" class="card" target="_blank">
+                            <h3>Instant Domain Search</h3>
+                            <p>https://instantdomainsearch.com/?q=</p>
+                        </a>
+                    </div>
+                </div>
+                <div id="section3-2" class="subcategory">
+                    <h3>域名注册</h3>
+                    <div class="card-grid">
+                        <a href="https://spaceship.com" class="card" target="_blank">
+                            <h3>Spaceship</h3>
+                            <p>spaceship.com</p>
+                        </a>
+                        <a href="https://porkbun.com" class="card" target="_blank">
+                            <h3>Porkbun</h3>
+                            <p>porkbun.com</p>
+                        </a>
+                        <a href="https://namecheap.com" class="card" target="_blank">
+                            <h3>Namecheap</h3>
+                            <p>namecheap.com</p>
+                        </a>
+                    </div>
+                </div>
+                <div id="section3-3" class="subcategory">
+                    <h3>代码&网站托管</h3>
+                    <div class="card-grid">
+                        <a href="https://github.com" class="card" target="_blank">
+                            <h3>GitHub</h3>
+                            <p>github.com</p>
+                        </a>
+                        <a href="https://cloudflare.com" class="card" target="_blank">
+                            <h3>Cloudflare</h3>
+                            <p>cloudflare.com</p>
+                        </a>
+                        <a href="https://vercel.com" class="card" target="_blank">
+                            <h3>Vercel</h3>
+                            <p>vercel.com</p>
+                        </a>
+                    </div>
+                </div>
+                <div id="section3-4" class="subcategory">
+                    <h3>数据后台</h3>
+                    <div class="card-grid">
+                        <a href="https://search.google.com/search-console/welcome" class="card" target="_blank">
+                            <h3>Google Search Console</h3>
+                            <p>https://search.google.com/search-console/welcome</p>
+                        </a>
+                        <a href="https://analytics.google.com/analytics/web/provision/#/provision" class="card" target="_blank">
+                            <h3>Google Analytics</h3>
+                            <p>https://analytics.google.com/analytics/web/provision/#/provision</p>
+                        </a>
+                        <a href="https://www.bing.com/webmasters/about" class="card" target="_blank">
+                            <h3>Bing Webmaster</h3>
+                            <p>https://www.bing.com/webmasters/about</p>
+                        </a>
+                    </div>
+                </div>
+                <div id="section3-5" class="subcategory">
+                    <h3>复刻网站</h3>
+                    <div class="card-grid">
+                        <a href="https://v0.dev/" class="card" target="_blank">
+                            <h3>v0.dev</h3>
+                            <p>https://v0.dev/</p>
+                        </a>
+                        <a href="https://same.new/" class="card" target="_blank">
+                            <h3>same.new</h3>
+                            <p>https://same.new/</p>
+                        </a>
+                        <a href="https://www.webifier.io/" class="card" target="_blank">
+                            <h3>Webifier</h3>
+                            <p>https://www.webifier.io/</p>
+                        </a>
+                    </div>
+                </div>
+                <div id="section3-6" class="subcategory">
+                    <h3>SEO优化建议</h3>
+                    <div class="card-grid">
+                        <a href="https://www.seoptimer.com/gptshunter.com" class="card" target="_blank">
+                            <h3>SEOptimer</h3>
+                            <p>https://www.seoptimer.com/gptshunter.com</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section4" class="section">
+                <h2>竞品调研</h2>
+                <div id="section4-1" class="subcategory">
+                    <h3>查看流量和网页关键词</h3>
+                    <div class="card-grid">
+                        <a href="https://aitdk.com/" class="card" target="_blank">
+                            <h3>AITDK</h3>
+                            <p>https://aitdk.com/</p>
+                        </a>
+                        <a href="https://ahrefs.com/traffic-checker/" class="card" target="_blank">
+                            <h3>Ahrefs Traffic Checker</h3>
+                            <p>https://ahrefs.com/traffic-checker/</p>
+                        </a>
+                    </div>
+                </div>
+                <div id="section4-2" class="subcategory">
+                    <h3>查看外链</h3>
+                    <div class="card-grid">
+                        <a href="https://ahrefs.com/free-seo-tools" class="card" target="_blank">
+                            <h3>Ahrefs SEO Tools</h3>
+                            <p>https://ahrefs.com/free-seo-tools</p>
+                        </a>
+                        <a href="https://ahrefs.com/backlink-checker" class="card" target="_blank">
+                            <h3>Ahrefs Backlink Checker</h3>
+                            <p>https://ahrefs.com/backlink-checker</p>
+                        </a>
+                    </div>
+                </div>
+                <div id="section4-3" class="subcategory">
+                    <h3>查看网站关键词</h3>
+                    <div class="card-grid">
+                        <a href="https://semrush.com" class="card" target="_blank">
+                            <h3>SEMrush</h3>
+                            <p>semrush.com</p>
+                        </a>
+                    </div>
+                </div>
+                <div id="section4-4" class="subcategory">
+                    <h3>查看关键词相关词</h3>
+                    <div class="card-grid">
+                        <a href="https://ahrefs.com/keyword-generator/" class="card" target="_blank">
+                            <h3>Ahrefs Keyword Generator</h3>
+                            <p>https://ahrefs.com/keyword-generator/</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section5" class="section">
+                <h2>功能实现</h2>
+                <div id="section5-1" class="subcategory">
+                    <h3>支付工具</h3>
+                    <div class="card-grid">
+                        <a href="https://www.creem.io/" class="card" target="_blank">
+                            <h3>Creem</h3>
+                            <p>https://www.creem.io/</p>
+                        </a>
+                    </div>
+                </div>
+                <div id="section5-2" class="subcategory">
+                    <h3>数据存储</h3>
+                    <div class="card-grid">
+                        <a href="https://supabase.com/" class="card" target="_blank">
+                            <h3>Supabase</h3>
+                            <p>https://supabase.com/</p>
+                        </a>
+                    </div>
+                </div>
+                <div id="section5-3" class="subcategory">
+                    <h3>模型API</h3>
+                    <div class="card-grid">
+                        <a href="https://replicate.com" class="card" target="_blank">
+                            <h3>Replicate</h3>
+                            <p>https://replicate.com</p>
+                        </a>
+                        <a href="https://www.astria.ai/" class="card" target="_blank">
+                            <h3>Astria AI</h3>
+                            <p>https://www.astria.ai/</p>
+                        </a>
+                        <a href="https://api-inference.huggingface.co/models/" class="card" target="_blank">
+                            <h3>Hugging Face</h3>
+                            <p>https://api-inference.huggingface.co/models/</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section6" class="section">
+                <h2>Iframe游戏</h2>
+                <div id="section6-1" class="subcategory">
+                    <h3>crazygames</h3>
+                    <div class="card-grid">
+                        <a href="https://www.crazygames.com/new" class="card" target="_blank">
+                            <h3>Crazy Games</h3>
+                            <p>https://www.crazygames.com/new</p>
+                        </a>
+                    </div>
+                </div>
+                <div id="section6-2" class="subcategory">
+                    <h3>gamedistribution</h3>
+                    <div class="card-grid">
+                        <a href="https://gamedistribution.com/games/" class="card" target="_blank">
+                            <h3>Game Distribution</h3>
+                            <p>https://gamedistribution.com/games/</p>
+                        </a>
+                    </div>
+                </div>
+                <div id="section6-3" class="subcategory">
+                    <h3>scratch</h3>
+                    <div class="card-grid">
+                        <a href="https://scratch.mit.edu/explore/projects/all/" class="card" target="_blank">
+                            <h3>Scratch</h3>
+                            <p>https://scratch.mit.edu/explore/projects/all/</p>
+                        </a>
+                    </div>
+                </div>
+                <div id="section6-4" class="subcategory">
+                    <h3>miniplay</h3>
+                    <div class="card-grid">
+                        <a href="https://www.miniplay.com/most-played" class="card" target="_blank">
+                            <h3>Miniplay</h3>
+                            <p>https://www.miniplay.com/most-played</p>
+                        </a>
+                    </div>
+                </div>
+                <div id="section6-5" class="subcategory">
+                    <h3>freezenova</h3>
+                    <div class="card-grid">
+                        <a href="https://freezenova.com/" class="card" target="_blank">
+                            <h3>Freezenova</h3>
+                            <p>https://freezenova.com/</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section7" class="section">
+                <h2>资讯</h2>
+                <div id="section7-1" class="subcategory">
+                    <h3>谷歌搜索中心</h3>
+                    <div class="card-grid">
+                        <a href="https://developers.google.com/search/docs/fundamentals/creating-helpful-content?hl=zh-cn" class="card" target="_blank">
+                            <h3>Google Search Central</h3>
+                            <p>https://developers.google.com/search/docs/fundamentals/creating-helpful-content?hl=zh-cn</p>
+                        </a>
+                    </div>
+                </div>
+                <div id="section7-2" class="subcategory">
+                    <h3>Reddit子社区</h3>
+                    <div class="card-grid">
+                        <a href="https://liberating-doll-b8a.notion.site/Reddit-1a8e8aed91b18021839ecba8b74e530b" class="card" target="_blank">
+                            <h3>Reddit Communities</h3>
+                            <p>https://liberating-doll-b8a.notion.site/Reddit-1a8e8aed91b18021839ecba8b74e530b</p>
+                        </a>
+                    </div>
+                </div>
+                <div id="section7-3" class="subcategory">
+                    <h3>Top Trending Websites</h3>
+                    <div class="card-grid">
+                        <a href="https://ahrefs.com/websites#trending" class="card" target="_blank">
+                            <h3>Ahrefs Trending</h3>
+                            <p>https://ahrefs.com/websites#trending</p>
+                        </a>
+                    </div>
+                </div>
+                <div id="section7-4" class="subcategory">
+                    <h3>AI VIDEO SAAS TOOL</h3>
+                    <div class="card-grid">
+                        <a href="https://docs.google.com/spreadsheets/d/1QOdqq9KbjQj1JZO43vc1pir2rnEEsMUXzTDATrOCn2k/edit?pli=1&gid=0#gid=0" class="card" target="_blank">
+                            <h3>AI Video Tools List</h3>
+                            <p>https://docs.google.com/spreadsheets/d/1QOdqq9KbjQj1JZO43vc1pir2rnEEsMUXzTDATrOCn2k/edit?pli=1&gid=0#gid=0</p>
+                        </a>
+                    </div>
+                </div>
+                <div id="section7-5" class="subcategory">
+                    <h3>Starter Story Premium</h3>
+                    <div class="card-grid">
+                        <a href="https://docs.google.com/spreadsheets/d/1eUni44pIURML2VWFFXKzNmm-WKuuam9_ynr5Fo_Q74M/edit?gid=83151001#gid=83151001" class="card" target="_blank">
+                            <h3>Solopreneur Report 2.0</h3>
+                            <p>https://docs.google.com/spreadsheets/d/1eUni44pIURML2VWFFXKzNmm-WKuuam9_ynr5Fo_Q74M/edit?gid=83151001#gid=83151001</p>
+                        </a>
+                    </div>
+                </div>
+                <div id="section7-6" class="subcategory">
+                    <h3>500/month Projects</h3>
+                    <div class="card-grid">
+                        <a href="https://www.500mrr.com/" class="card" target="_blank">
+                            <h3>500MRR</h3>
+                            <p>https://www.500mrr.com/</p>
+                        </a>
+                    </div>
+                </div>
+                <div id="section7-7" class="subcategory">
+                    <h3>Ask HN Projects</h3>
+                    <div class="card-grid">
+                        <a href="https://news.ycombinator.com/item?id=42373343" class="card" target="_blank">
+                            <h3>HN: $500/month Projects</h3>
+                            <p>https://news.ycombinator.com/item?id=42373343</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- 主题切换按钮 -->
+    <button class="theme-toggle" id="themeToggle">
+        <i class="fas fa-palette"></i>
+    </button>
+
+    <!-- 主题切换面板 -->
+    <div class="theme-switcher" id="themeSwitcher" style="display: none;">
+        <h3><i class="fas fa-paint-brush"></i> 选择主题</h3>
+        <div class="theme-options">
+            <div class="theme-option" data-theme="default">
+                <div class="theme-color-preview theme-default-preview"></div>
+                <span>默认主题</span>
+            </div>
+            <div class="theme-option" data-theme="ocean">
+                <div class="theme-color-preview theme-ocean-preview"></div>
+                <span>海洋主题</span>
+            </div>
+            <div class="theme-option" data-theme="forest">
+                <div class="theme-color-preview theme-forest-preview"></div>
+                <span>森林主题</span>
+            </div>
+            <div class="theme-option" data-theme="sunset">
+                <div class="theme-color-preview theme-sunset-preview"></div>
+                <span>日落主题</span>
+            </div>
+            <div class="theme-option" data-theme="dark">
+                <div class="theme-color-preview theme-dark-preview"></div>
+                <span>深色主题</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.has-submenu').forEach(item => {
+            item.addEventListener('click', event => {
+                event.preventDefault();
+                const submenu = item.nextElementSibling;
+                const allSubmenus = document.querySelectorAll('.submenu');
+                
+                // Close all other submenus
+                allSubmenus.forEach(menu => {
+                    if (menu !== submenu) {
+                        menu.style.display = 'none';
+                        const arrow = menu.previousElementSibling.querySelector('.arrow');
+                        if (arrow) arrow.textContent = '▶';
+                    }
+                });
+
+                // Toggle current submenu
+                submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+                const arrow = item.querySelector('.arrow');
+                arrow.textContent = submenu.style.display === 'block' ? '▼' : '▶';
+            });
+        });
+
+        // Show first level submenus by default
+        document.querySelectorAll('.nav-list > li > .submenu').forEach(submenu => {
+            submenu.style.display = 'block';
+        });
+
+        // 搜索功能
+        const searchInput = document.getElementById('search-input');
+        const searchClear = document.getElementById('search-clear');
+        const searchResults = document.querySelector('.search-results');
+        const resultsContainer = document.getElementById('results-container');
+        const resultsCount = document.getElementById('results-count');
+
+        // 收集所有可搜索的内容
+        function getAllSearchableItems() {
+            const items = [];
+            document.querySelectorAll('.card').forEach(card => {
+                const title = card.querySelector('h3').textContent;
+                const url = card.querySelector('p').textContent;
+                const category = card.closest('.section').querySelector('h2').textContent;
+                const subcategory = card.closest('.subcategory').querySelector('h3').textContent;
+                const link = card.getAttribute('href');
+                
+                items.push({
+                    title,
+                    url,
+                    category,
+                    subcategory,
+                    link
+                });
+            });
+            return items;
+        }
+
+        const searchableItems = getAllSearchableItems();
+
+        // 搜索函数
+        function performSearch(query) {
+            if (!query) {
+                searchResults.style.display = 'none';
+                return;
+            }
+
+            const results = searchableItems.filter(item => {
+                const searchString = `${item.title} ${item.url} ${item.category} ${item.subcategory}`.toLowerCase();
+                return searchString.includes(query.toLowerCase());
+            });
+
+            displayResults(results);
+        }
+
+        // 显示搜索结果
+        function displayResults(results) {
+            resultsContainer.innerHTML = '';
+            resultsCount.textContent = results.length;
+            
+            if (results.length === 0) {
+                resultsContainer.innerHTML = '<div class="search-result-item"><p>未找到相关结果</p></div>';
+            } else {
+                results.forEach(result => {
+                    const resultItem = document.createElement('div');
+                    resultItem.className = 'search-result-item';
+                    resultItem.innerHTML = `
+                        <h4>${result.title}</h4>
+                        <p>${result.url}</p>
+                        <div class="result-category">${result.category} > ${result.subcategory}</div>
+                    `;
+                    
+                    resultItem.addEventListener('click', () => {
+                        window.open(result.link, '_blank');
+                    });
+                    
+                    resultsContainer.appendChild(resultItem);
+                });
+            }
+            
+            searchResults.style.display = 'block';
+        }
+
+        // 事件监听
+        searchInput.addEventListener('input', (e) => {
+            const query = e.target.value.trim();
+            searchClear.style.display = query ? 'flex' : 'none';
+            performSearch(query);
+        });
+
+        searchClear.addEventListener('click', () => {
+            searchInput.value = '';
+            searchClear.style.display = 'none';
+            searchResults.style.display = 'none';
+            searchInput.focus();
+        });
+
+        // 点击外部关闭搜索结果
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.search-container')) {
+                searchResults.style.display = 'none';
+            }
+        });
+
+        // 键盘快捷键
+        document.addEventListener('keydown', (e) => {
+            // Command/Ctrl + K 聚焦搜索框
+            if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+                e.preventDefault();
+                searchInput.focus();
+            }
+            
+            // Esc 关闭搜索结果
+            if (e.key === 'Escape') {
+                searchResults.style.display = 'none';
+                searchInput.blur();
+            }
+        });
+
+        // 主题切换功能
+        const themeToggle = document.getElementById('themeToggle');
+        const themeSwitcher = document.getElementById('themeSwitcher');
+        const themeOptions = document.querySelectorAll('.theme-option');
+        const html = document.documentElement;
+
+        // 从本地存储加载主题
+        const savedTheme = localStorage.getItem('selectedTheme') || 'default';
+        html.className = `theme-${savedTheme}`;
+        updateActiveTheme(savedTheme);
+
+        // 切换主题面板显示
+        themeToggle.addEventListener('click', () => {
+            const isVisible = themeSwitcher.style.display === 'block';
+            themeSwitcher.style.display = isVisible ? 'none' : 'block';
+            
+            if (!isVisible) {
+                // 重置动画
+                themeSwitcher.style.animation = 'none';
+                themeSwitcher.offsetHeight; // 触发重排
+                themeSwitcher.style.animation = null;
+            }
+        });
+
+        // 点击外部关闭主题面板
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.theme-switcher') && !e.target.closest('.theme-toggle')) {
+                themeSwitcher.style.display = 'none';
+            }
+        });
+
+        // 主题切换
+        themeOptions.forEach(option => {
+            option.addEventListener('click', () => {
+                const theme = option.dataset.theme;
+                html.className = `theme-${theme}`;
+                localStorage.setItem('selectedTheme', theme);
+                updateActiveTheme(theme);
+                
+                // 添加过渡动画到body
+                document.body.style.transition = 'background-color 0.3s ease, color 0.3s ease';
+                setTimeout(() => {
+                    document.body.style.transition = '';
+                }, 300);
+            });
+        });
+
+        // 更新激活的主题选项
+        function updateActiveTheme(theme) {
+            themeOptions.forEach(option => {
+                option.classList.toggle('active', option.dataset.theme === theme);
+            });
+        }
+
+        // 检测系统主题变化
+        if (window.matchMedia) {
+            const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+            darkModeMediaQuery.addListener((e) => {
+                if (!localStorage.getItem('selectedTheme')) {
+                    const theme = e.matches ? 'dark' : 'default';
+                    html.className = `theme-${theme}`;
+                    updateActiveTheme(theme);
+                }
+            });
+        }
+    </script>
+</body>
+</html> 

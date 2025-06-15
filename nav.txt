@@ -1,0 +1,6 @@
+八、自建网站
+技术工具导航  https://devnav.online/
+trumptowerdefense   https://trumptowerdefense.monster/
+boxing3d  https://boxing3d.space/
+drawthebirdpath https://drawthebirdpath.com/
+IndieTools Hub  https://persona-nav.vercel.app/  # 独立开发者工具导航 

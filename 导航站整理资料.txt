@@ -1,0 +1,48 @@
+  
+一、提问
+Cloude  https://claude.ai/﻿
+ChatGPT https://chatgpt.com/﻿
+Gemini  https://gemini.google.com/app﻿
+deepseek  https://chat.deepseek.com/﻿
+
+二、需求收集和关键词调研
+AI导航站的需求列表  https://theresanaiforthat.com/requests﻿
+关键词难度 https://ahrefs.com/keyword-difficulty﻿
+谷歌下拉词 https://searchsuggest.tips/?keyword=﻿
+toolify榜单 https://www.toolify.ai/Best-AI-Tools-revenue﻿
+GoogleTrends  https://trends.google.com/trends/explore?geo=US&hl=zh-CN﻿
+
+三、上站必备
+域名查询  https://leandomainsearch.com/﻿  https://query.domains/﻿ https://instantdomainsearch.com/?q=﻿
+域名注册  spaceship.com porkbun.com namecheap.com
+代码&网站 托管  github.com  cloudflare.com  vercel.com
+数据后台  https://search.google.com/search-console/welcome﻿ https://analytics.google.com/analytics/web/provision/#/provision﻿ https://www.bing.com/webmasters/about﻿
+复刻网站  https://v0.dev/﻿  https://same.new/﻿  https://www.webifier.io/﻿
+SEO优化建议 https://www.seoptimer.com/gptshunter.com﻿   
+
+四、竞品调研
+查看流量和网页关键词  https://aitdk.com/﻿ https://ahrefs.com/traffic-checker/﻿
+查看外链  https://ahrefs.com/free-seo-tools﻿  https://ahrefs.com/backlink-checker﻿
+查看网站关键词 semrush.com 
+看一个关键词的相关关键词  https://ahrefs.com/keyword-generator/﻿  
+
+五、功能实现必备
+支付工具  https://www.creem.io/﻿    
+数据存储  https://supabase.com/﻿    
+模型API https://replicate.com﻿  https://www.astria.ai/﻿ https://api-inference.huggingface.co/models/﻿
+
+六、Iframe游戏
+crazygames  https://www.crazygames.com/new﻿
+gamedistribution﻿ https://gamedistribution.com/games/﻿
+scratch https://scratch.mit.edu/explore/projects/all/﻿
+miniplay  https://www.miniplay.com/most-played﻿
+freezenova  https://freezenova.com/﻿
+
+七、资讯
+谷歌搜索中心:SEO基础知识  https://developers.google.com/search/docs/fundamentals/creating-helpful-content?hl=zh-cn
+Reddit子社区 https://liberating-doll-b8a.notion.site/Reddit-1a8e8aed91b18021839ecba8b74e530b
+Top Trending Websites from Ahrefs   https://ahrefs.com/websites#trending
+AI VIDEO SAAS TOOL  https://docs.google.com/spreadsheets/d/1QOdqq9KbjQj1JZO43vc1pir2rnEEsMUXzTDATrOCn2k/edit?pli=1&gid=0#gid=0
+Starter Story Premium Solopreneur Report 2.0  https://docs.google.com/spreadsheets/d/1eUni44pIURML2VWFFXKzNmm-WKuuam9_ynr5Fo_Q74M/edit?gid=83151001#gid=83151001
+Those making $500/month on side projects in 20xx  https://www.500mrr.com/
+Ask HN:Those making $500/month on side projects in 2024-Show and tell https://news.ycombinator.com/item?id=42373343
